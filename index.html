@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ryan Lucas | Personal Website</title>
+    <meta name="description" content="The personal website of Ryan Lucas, software engineer, husband, father, hobbyist musician, gamer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        
+        body {
+            background: #141414;
+            color: #45D40C;
+            font: 0.9em 'Andale Mono', Consolas, 'Courier New';
+        }
+        
+        .shell-body {
+            margin: 0 30px 0 0;
+            padding: 5px;
+            list-style: none;
+            line-height: 1.6em;
+            -webkit-border-bottom-right-radius: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -moz-border-radius-bottomright: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        
+        textarea {
+            background: #141414;
+            color: #45D40C;
+            border: none;
+            font: 1em 'Andale Mono', Consolas, 'Courier New';
+            width: 100%;
+            word-wrap: break-word;
+            resize: none;
+            overflow: hidden;
+            min-height: 50px;
+            max-height: 100px;
+            padding-top: 2px;
+        }
+        
+        li {
+            z-index: 2;
+        }
+        
+        .inputli {
+            z-index: 1;
+        }
+        
+        textarea:focus {
+            outline: none;
+        }
+        
+        .shell-body li:before {
+            content: '$';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .shell-body li {
+            word-wrap: break-word;
+            position: relative;
+            padding: 0 0 0 15px;
+        }
+        
+        a {
+            color: cyan;
+        }
+        
+        a:hover {
+            color: darkcyan
+        }
+        
+        a:visited {
+            color: darkorchid
+        }
+        
+        nav li {
+            list-style-type: none;
+            padding: 5px 0;
+        }
+        
+        #menu {
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <ul class="shell-body" id="commandlist">
+        <li>Welcome to the personal website of Ryan Lucas. Type "help" at any time to see a list of commands. Try starting with the "about" command.</li>
+        <li class="inputli">
+            <form id="usersubmit">
+                <textarea id="userinput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                <input type="submit" style="visibility: hidden; display:none;">
+            </form>
+        </li>
+    </ul>
+    <nav id="menu">
+        <ul id="icons">
+            <li><a target="_blank" id="linkedin" title="Ryan's Linkedin" href="https://www.linkedin.com/pub/ryan-lucas/36/527/258"><i class="fa fa-2x fa-linkedin"></i></a></li>
+            <li><a target="_blank" id="twitter" title="Ryan's Twitter" href="https://twitter.com/rdlucas2"><i class="fa fa-2x fa-twitter"></i></a></li>
+            <li><a target="_blank" id="instagram" title="Ryan's Instagram" href="https://www.instagram.com/ryan.d.lucas/"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li><a target="_blank" id="github" title="Ryan's Github" href="https://github.com/rdlucas2"><i class="fa fa-2x fa-github"></i></a></li>
+            <li style="display: none"><a target="_blank" id="wedding" title="Ryan's Wedding" href="http://lucaswedding.pictures">Wedding</a></li>
+            <li style="display: none"><a target="_blank" id="music" href="https://www.reverbnation.com/paulathena">Paul and Athena Reverb Nation</a></li>
+            <li style="display: none"><a target="_blank" id="starcraft" href="https://www.youtube.com/user/rCraftGaming">rcraftgaming youtube</a></li>
+            <li style="display: none"><a target="_blank" id="ddiymca" href="http://www.wesa.fm/post/leadership-company-ymca-partner-teach-problem-solving-through-robotics#stream/0">YMCA program article</a></li>
+            <li style="display: none"><a target="_blank" id="weather" href="https://rdlucas2.github.io/mySimpleWeather/">Weather</a></li>
+        </ul>
+    </nav>
+    <noscript>
+        <h3>About Me:</h3>
+        <p>
+            I'm a husband, father, hobbyist musician, and currently employed as a software engineer in a Devops role. I work with clients/employers to build custom solutions. I started out making web sites for small businesses, and gradually worked my way to developing API's, querying/designing databases, writing
+            Line of Business applications, deploying software and managing permissions and networking. Technologies, languages, and frameworks I'm most familiar with include html, css, javascript, nodejs, php, sql, c# (.net framework/core), iis, powershell,
+            angular, azure (ARM Templates, Azure powershell, portal management), automated testing, f5 iRestControl api, vsphere powercli, and octopus deploy. I've played around with docker, kubernetes, python, and linux server setups. I do side projects
+            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I've also participated in several innovation projects at my day job like building a phone app with real time text
+            chat, exploring the web audio api and speech to text/text to speech apis and web workers, setting up a website and linux virtual machine to host a python flask api behind gunicorn and nginx to provide infrastructure for a team project using
+            machine learning to score user responses to tough leadership questions, creating a mad libs type game driven by input from your brain waves (see <a target="_blank" href="https://store.neurosky.com/">mindwave mobile headset</a>), and building
+            a robot controlled by the mindwave mobile headset as well - which we built together with kids from the YMCA. Contact me via <a href="https://linkedin.com/in/ryan-lucas-25852736" target="_blank">my linkedin <i class="fa fa-linkedin"></i></a>.
+        </p>
+        <h3>Site Info:</h3>
+        <p>
+            It was time to redo this site, mainly because https is highly encouraged now. Also I wasn\'t maintaing the old hosting server well so thought a clean slate would be good. Here we are. I like this console theme. Right now the "commands" are pretty basic but I hopefully will expand them in the future. Also I need to come up with a better way to deploy this site. Anyway, thanks for visiting.
+        </p>
+        <h3>Wedding Site</h3>
+        <p>
+            I made this site so my wife and I could pull up our pictures anywhere and show them off! Check it out here: <a href="http://lucaswedding.pictures" target="_blank">lucaswedding.pictures</a>.
+        </p>
+        <h3>Music</h3>
+        <p>
+            I used to play saxophone and ewi in a band that played around Pittsburgh. Check it out here: <a href="https://www.reverbnation.com/paulathena" target="_blank">Paul and Athena Reverb Nation</a>
+        </p>
+        <h3>Wife's piano studio site</h3>
+        <p>
+            My wife is a piano teacher. I created a custom CMS using vue and firebase for her site. Check it out here: <a href="https://christinelucaspiano.com" target ="_blank">Christine Lucas Piano Studio</a>
+        </p>
+        <h3>Starcraft</h3>
+        <p>
+            I used to help run a Starcraft 2 league. Check it out here: <a href="https://www.youtube.com/user/rCraftGaming" target="_blank">rcraftgaming youtube</a>.
+        </p>
+        <h3>DDI YMCA</h3>
+        <p>
+            This is what I was talking about in the about me! Check it out here: <a href="http://www.wesa.fm/post/leadership-company-ymca-partner-teach-problem-solving-through-robotics#stream/0" target="_blank">Article about YMCA program</a>.
+        </p>
+        <h3>Weather Site</h3>
+        <p>
+            A simple weather page I built - it used to use the yahoo api but has since changed - also the source is on my github. Check it out here: <a href="https://rdlucas2.github.io/mySimpleWeather/" target="_blank">weather</a>.
+        </p>
+    </noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://rdlucas2.github.io/simpleOpenWeatherApi/api.js"></script>
+    <script src="https://rdlucas2.github.io/simpleMapQuestApi/api.js"></script>
+    <script type="text/javascript">
+        var openWeatherMapApiKey = 'b6b5e3ce1bc6e096b11b918e7f5f9c02';
+        var mapQuestApiKey = 'fcTfgruXwA1n3QK48RuejddZgOpBlYkr';
+        var openWeatherApi = new OpenWeatherApi(openWeatherMapApiKey);
+        var mapQuestApi = new MapQuestApi(mapQuestApiKey);
+        var userinput_el = document.getElementById("userinput");
+        var form_el = document.getElementById('usersubmit');
+        var previousCommands = [];
+        var previousCommandIndex = 0;
+
+        function handleIndex(x) {
+            if (x === '+') {
+                previousCommandIndex--;
+            }
+            if (x === '-') {
+                previousCommandIndex++;
+            }
+            console.log('try: ', previousCommandIndex);
+            if (previousCommandIndex > previousCommands.length - 1) {
+                previousCommandIndex = previousCommands.length;
+                userinput_el.value = null;
+                return;
+            } else if (previousCommandIndex < 0) {
+                previousCommandIndex = 0;
+                return;
+            }
+            userinput_el.value = previousCommands[previousCommandIndex];
+        }
+        var appConsole = (function() {
+            var commands = {
+                'about': function() {
+                    return `I'm a husband, father, hobbyist musician, and currently employed as a software engineer in a Devops role. I work with clients/employers to build custom solutions. I started out making web sites for small businesses, and gradually worked my way to developing API's, querying/designing databases, writing
+            Line of Business applications, deploying software and managing permissions and networking. Technologies, languages, and frameworks I'm most familiar with include html, css, javascript, nodejs, php, sql, c# (.net framework/core), iis, powershell,
+            angular, azure (ARM Templates, Azure powershell, portal management), automated testing, f5 iRestControl api, vsphere powercli, and octopus deploy. I've played around with docker, kubernetes, python, and linux server setups. I do side projects
+            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I've also participated in several innovation projects at my day job like building a phone app with real time text
+            chat, exploring the web audio api and speech to text/text to speech apis and web workers, setting up a website and linux virtual machine to host a python flask api behind gunicorn and nginx to provide infrastructure for a team project using
+            machine learning to score user responses to tough leadership questions, creating a mad libs type game driven by input from your brain waves (see <a target="_blank" href="https://store.neurosky.com/">mindwave mobile headset</a>), and building
+            a robot controlled by the mindwave mobile headset as well - which we built together with kids from the YMCA. Contact me via <a href="https://linkedin.com/in/ryan-lucas-25852736" target="_blank">my linkedin <i class="fa fa-linkedin"></i></a>`
+                },
+                'linkedin': function() {
+                    document.getElementById('linkedin').click();
+                    return 'Opened <a href="https://linkedin.com/in/ryan-lucas-25852736" target="_blank">Ryan Lucas\' linkedin <i class="fa fa-linkedin"></i></a> in new tab..."';
+                },
+                'github': function() {
+                    document.getElementById('github').click();
+                    return 'Opened <a href="https://github.com/rdlucas2" target="_blank">Ryan Lucas\' github <i class="fa fa-github"></i></a> in new tab...';
+                },
+                'twitter': function() {
+                    document.getElementById('twitter').click();
+                    return 'Opened <a href="https://twitter.com/rdlucas2" target="_blank">Ryan Lucas\' twitter <i class="fa fa-twitter"></i></a> in new tab...';
+                },
+                'instagram': function() {
+                    document.getElementById('instagram').click();
+                    return 'Opened <a href="https://www.instagram.com/ryan.d.lucas/" target="_blank">instagram <i class="fa fa-instagram"></i></a> in a new tab...'
+                },
+                'wedding': function() {
+                    return 'I made this site so my wife and I could pull up our pictures anywhere and show them off! Check it out here: <a href="http://lucaswedding.pictures" target="_blank">lucaswedding.pictures</a>.';
+                },
+                'music': function() {
+                    return 'I used to play saxophone and ewi in a band that played around Pittsburgh. Check it out here: <a href="https://www.reverbnation.com/paulathena" target="_blank">Paul and Athena Reverb Nation</a> <iframe width="100%" height="265" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_1111673?widget_id=55&pwc[included_songs]=1&context_type=page_object&pwc[size]=small" style="width:0px;min-width:100%;max-width:100%;"></iframe>';
+                },
+                'piano': function() {
+                    return 'My wife is a piano teacher. I created a custom CMS using vue and firebase for her site. Check it out here: <a href="https://christinelucaspiano.com" target ="_blank">Christine Lucas Piano Studio</a>'
+                },
+                'starcraft': function() {
+                    return 'I used to help run a Starcraft 2 league. Check it out here: <a href="https://www.youtube.com/user/rCraftGaming" target="_blank">rcraftgaming youtube</a>.';
+                },
+                'ddiymca': function() {
+                    return 'This is what I was talking about in the about command! Check it out here: <a href="http://www.wesa.fm/post/leadership-company-ymca-partner-teach-problem-solving-through-robotics#stream/0" target="_blank">Article about YMCA program</a>.';
+                },
+                'weather': function() {
+                    return 'A simple weather page I built - it used to use the yahoo api but has since changed - also the source is on my github. Check it out here: <a href="https://rdlucas2.github.io/mySimpleWeather/" target="_blank">weather</a>.';
+                },
+                'siteinfo': function() {
+                    return 'It was time to redo this site, mainly because https is highly encouraged now. Also I wasn\'t maintaing the old hosting server well so thought a clean slate would be good. Here we are. I like this console theme. Right now the "commands" are pretty basic but I hopefully will expand them in the future. Also I need to come up with a better way to deploy this site. Anyway, thanks for visiting.'
+                },
+                'forecast': function(args) {
+                    var location = args.join(' ');
+
+                    if (!location) {
+                        return 'forecast requires a location like a city/state or zipcode - try forecast pittsburgh pa';
+                    }
+
+                    $.when(self.mapQuestApi.Search(location)).then(function(data) {
+                        var lat = data.results[0].locations[0].latLng.lat;
+                        var long = data.results[0].locations[0].latLng.lng;
+                        $.when(self.openWeatherApi.CurrentByLatLong(lat, long)).then(function(weather) {
+                            var description = `${(weather.weather[0].description).toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')}`;
+                            var summary = `<img src="https://openweathermap.org/img/w/${weather.weather[0].icon}.png" />
+                            <h4>Currently ${description} ${weather.main.temp} °F</h4>`;
+                            var forecast_elements = document.getElementsByClassName("forecast");
+                            forecast_elements[forecast_elements.length - 1].innerHTML = summary;
+                        });
+                    });
+
+                    return location + ' <span class="forecast"></span>';
+                },
+                'help': function() {
+                        var keys = [];
+                        for (var key in this) {
+                            keys.push(key);
+                        }
+                        return keys.join(', ');
+                    }
+                    // 'exit': function() {
+                    //     return 'Goodbye...';
+                    // }
+            };
+            return {
+                process() {
+                    var response = '';
+                    var userValue = userinput_el.value;
+                    previousCommands.push(userValue);
+                    previousCommandIndex = previousCommands.length;
+                    var valueArray = userValue.split(" ");
+                    var command = valueArray.splice(0, 1); //when we splice we get the removed item
+                    if (commands[command]) {
+                        response = command + "...\r\n" + commands[command](valueArray);
+                    } else {
+                        response = "That command does not exist. Type \"help\" to see a list of commands.";
+                    }
+                    var newItem = document.createElement('li');
+                    var textnode = document.createTextNode("");
+                    newItem.appendChild(textnode);
+                    var list = document.getElementById("commandlist");
+                    list.insertBefore(newItem, list.childNodes[list.childNodes.length - 2]);
+                    newItem.insertAdjacentHTML('afterbegin', response);
+                    userinput_el.value = '';
+                    userinput_el.focus();
+                }
+            }
+        })();
+
+        document.body.addEventListener('click', function() {
+            userinput_el.focus();
+        }, true);
+
+        window.setTimeout(function() {
+            userinput_el.focus();
+            userinput_el.addEventListener('keypress', function(e) {
+                userinput_el.style.height = "5px";
+                userinput_el.style.height = (userinput_el.scrollHeight) + "px";
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    appConsole.process(userinput_el.value);
+                }
+            });
+        }, 0);
+
+        window.setTimeout(function() {
+            userinput_el.addEventListener('keydown', function(e) {
+                if (e.keyCode == 38) {
+                    e.preventDefault();
+                    handleIndex('+');
+                }
+                if (e.keyCode == 40) {
+                    e.preventDefault();
+                    handleIndex('-');
+                }
+            });
+        }, 0);
+
+        form_el.addEventListener('submit', function(event) {
+            event.preventDefault();
+            appConsole.process(userinput_el.value);
+        });
+    </script>
+</body>
+
+</html>
