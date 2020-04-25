@@ -118,6 +118,7 @@
             <li><a target="_blank" id="twitter" title="Ryan's Twitter" href="https://twitter.com/rdlucas2"><i class="fa fa-2x fa-twitter"></i></a></li>
             <li><a target="_blank" id="instagram" title="Ryan's Instagram" href="https://www.instagram.com/ryan.d.lucas/"><i class="fa fa-2x fa-instagram"></i></a></li>
             <li><a target="_blank" id="github" title="Ryan's Github" href="https://github.com/rdlucas2"><i class="fa fa-2x fa-github"></i></a></li>
+            <li><a target="_blank" id="blogger" title="Ryan's Blog" href="https:/blog.rdlucas.com"><i class="fa fa-2x fa-book"></i></a></li>
             <li style="display: none"><a target="_blank" id="wedding" title="Ryan's Wedding" href="http://lucaswedding.pictures">Wedding</a></li>
             <li style="display: none"><a target="_blank" id="music" href="https://www.reverbnation.com/paulathena">Paul and Athena Reverb Nation</a></li>
             <li style="display: none"><a target="_blank" id="starcraft" href="https://www.youtube.com/user/rCraftGaming">rcraftgaming youtube</a></li>
@@ -131,9 +132,10 @@
             I'm a husband, father, hobbyist musician, and currently employed as a software engineer in a Devops role. I work with clients/employers to build custom solutions. I started out making web sites for small businesses, and gradually worked my way to developing API's, querying/designing databases, writing
             Line of Business applications, deploying software and managing permissions and networking. Technologies, languages, and frameworks I'm most familiar with include html, css, javascript, nodejs, php, sql, c# (.net framework/core), iis, powershell,
             angular, azure (ARM Templates, Azure powershell, portal management), automated testing, f5 iRestControl api, vsphere powercli, and octopus deploy. I've played around with docker, kubernetes, python, and linux server setups. I do side projects
-            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I've also participated in several innovation projects at my day job like building a phone app with real time text
+            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I occasionally write on <a href="https://blog.rdlucas.com" target="_blank">my blog <i class="fa fa-book"></i></a>.
+            I've also participated in several innovation projects at my day job like building a phone app with real time text
             chat, exploring the web audio api and speech to text/text to speech apis and web workers, setting up a website and linux virtual machine to host a python flask api behind gunicorn and nginx to provide infrastructure for a team project using
-            machine learning to score user responses to tough leadership questions, creating a mad libs type game driven by input from your brain waves (see <a target="_blank" href="https://store.neurosky.com/">mindwave mobile headset</a>), and building
+            machine learning to score user responses to tough leadership questions, creating a mad libs type game driven by input from your brain waves (see <a target="_blank" href="https://store.neurosky.com/">mindwave mobile headset</a></a>>), and building
             a robot controlled by the mindwave mobile headset as well - which we built together with kids from the YMCA. Contact me via <a href="https://linkedin.com/in/ryan-lucas-25852736" target="_blank">my linkedin <i class="fa fa-linkedin"></i></a>.
         </p>
         <h3>Site Info:</h3>
@@ -202,7 +204,7 @@
                     return `I'm a husband, father, hobbyist musician, and currently employed as a software engineer in a Devops role. I work with clients/employers to build custom solutions. I started out making web sites for small businesses, and gradually worked my way to developing API's, querying/designing databases, writing
             Line of Business applications, deploying software and managing permissions and networking. Technologies, languages, and frameworks I'm most familiar with include html, css, javascript, nodejs, php, sql, c# (.net framework/core), iis, powershell,
             angular, azure (ARM Templates, Azure powershell, portal management), automated testing, f5 iRestControl api, vsphere powercli, and octopus deploy. I've played around with docker, kubernetes, python, and linux server setups. I do side projects
-            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I've also participated in several innovation projects at my day job like building a phone app with real time text
+            as well, viewable on <a href="https://github.com/rdlucas2" target="_blank">my github account <i class="fa fa-github"></i></a>. I occasionally write on <a href="https://blog.rdlucas.com" target="_blank">my blog <i class="fa fa-book"></i></a>. I've also participated in several innovation projects at my day job like building a phone app with real time text
             chat, exploring the web audio api and speech to text/text to speech apis and web workers, setting up a website and linux virtual machine to host a python flask api behind gunicorn and nginx to provide infrastructure for a team project using
             machine learning to score user responses to tough leadership questions, creating a mad libs type game driven by input from your brain waves (see <a target="_blank" href="https://store.neurosky.com/">mindwave mobile headset</a>), and building
             a robot controlled by the mindwave mobile headset as well - which we built together with kids from the YMCA. Contact me via <a href="https://linkedin.com/in/ryan-lucas-25852736" target="_blank">my linkedin <i class="fa fa-linkedin"></i></a>`
@@ -222,6 +224,10 @@
                 'instagram': function() {
                     document.getElementById('instagram').click();
                     return 'Opened <a href="https://www.instagram.com/ryan.d.lucas/" target="_blank">instagram <i class="fa fa-instagram"></i></a> in a new tab...'
+                },
+                'blog': function() {
+                    document.getElementById('blogger').click();
+                    return 'Opened <a href="https://blog.rdlucas.com" target="_blank">blog <i class="fa fa-book"></i></a> in a new tab...'
                 },
                 'wedding': function() {
                     return 'I made this site so my wife and I could pull up our pictures anywhere and show them off! Check it out here: <a href="http://lucaswedding.pictures" target="_blank">lucaswedding.pictures</a>.';
