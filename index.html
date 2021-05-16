@@ -313,7 +313,7 @@
 
         window.setTimeout(function() {
             userinput_el.focus();
-            userinput_el.addEventListener('keypress', function(e) {
+            userinput_el.addEventListener('keyup', function(e) {
                 userinput_el.style.height = "5px";
                 userinput_el.style.height = (userinput_el.scrollHeight) + "px";
                 if (e.keyCode == 13) {
