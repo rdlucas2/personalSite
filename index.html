@@ -285,7 +285,7 @@
             return {
                 process() {
                     var response = '';
-                    var userValue = userinput_el.value;
+                    var userValue = userinput_el.value.replace(/^\s+|\s+$/g, '');
                     previousCommands.push(userValue);
                     previousCommandIndex = previousCommands.length;
                     var valueArray = userValue.split(" ");
@@ -321,8 +321,6 @@
 
         window.setTimeout(function() {
             userinput_el.addEventListener('keydown', function(e) {
-                alert(userinput_el.value);
-                alert(e.keyCode);
                 if (e.keyCode == 38) {
                     e.preventDefault();
                     handleIndex('+');
